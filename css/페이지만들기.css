@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+div{
+    border: 1px solid black;
+
+}
+
+
+div, header, main, footer,section{ border : 1px solid black;}
+
+body{
+    display : flex;
+    flex-direction : column;
+    min-height: 100vh;
+}
+
+header{
+    height: 60px;
+    display : flex;
+    
+}
+
+.header-1{ width: 100px;}
+.header-2{ width: 70px;}
+.header-3{ flex-grow : 1; 
+    display: flex;
+    justify-content : flex-end;
+}
+
+
+
+.header-3 > a {
+    flex-direction : column;
+}
+
+
+
+main{ 
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.name-1{ height: 200px;}
+.name-2{ height: 150px;}
+.name-3{ flex-grow: 1;}
+
+main > name-1 > img{
+
+    width : 100%;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main > name-2 > img{
+
+    width : 100%;
+    height : 100%;
+    display: flex;
+    justify-content: center;
+}
+
+footer{
+    height: 100px;
+    display : flex;
+}
+
+.bottom-1{
+    width: 200px;
+    height: 40px;
+    border-radius: 30%;
+    position: fixed;
+    background-color: white;
+  
+    bottom: 30px;
+    right: 30px;
+  }
+  
+  .bottom-1 > a{
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    text-align: center;
+    text-decoration: none;/* 밑줄 삭제 */
+    color: black;
+    font-weight: bold;
+  
+    line-height: 38px; /* 장평 */
+    user-select: none;/* 블럭 금지 */
+    border-radius: 50%;
+  }
+
